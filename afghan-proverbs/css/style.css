@@ -1,0 +1,257 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5dc;
+  color: #4b2e1e;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #8b4513;
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.subtitle {
+  font-style: italic;
+  margin-top: -10px;
+}
+
+nav {
+  margin-top: 1rem;
+}
+
+nav a {
+  color: #daa520;
+  margin: 0 1rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+main {
+  padding: 2rem;
+}
+
+.intro {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.search-bar {
+  padding: 0.5rem;
+  width: 60%;
+  max-width: 400px;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.description {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+}
+
+.featured h2 {
+  text-align: center;
+  color: #8b4513;
+  margin-bottom: 1rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  padding: 1rem;
+}
+
+.card {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  background-color: #fff8e1;
+}
+
+.original {
+  font-family: "Noto Serif", serif;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #4b2e1e;
+}
+
+.translation {
+  font-size: 1rem;
+  color: #333;
+}
+.hover-card {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.meaning {
+  display: none;
+  font-size: 0.95rem;
+  color: #333;
+  margin-top: 0.5rem;
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+.hover-card:hover .meaning {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.detail {
+  padding: 2rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.detail-card {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.detail-card .original {
+  font-family: "Noto Serif", serif;
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+  color: #4b2e1e;
+}
+
+.detail-card .translation {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  color: #555;
+}
+
+.detail-card .meaning {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.back-link {
+  display: inline-block;
+  color: #8b4513;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.2s ease;
+}
+
+.back-link:hover {
+  color: #daa520;
+}
+.wall {
+  padding: 2rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.proverb-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.proverb-form label {
+  font-weight: bold;
+  color: #4b2e1e;
+}
+
+.proverb-form input,
+.proverb-form textarea {
+  padding: 0.8rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+.proverb-form textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.proverb-form button {
+  padding: 0.8rem;
+  background-color: #8b4513;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.proverb-form button:hover {
+  background-color: #a0522d;
+}
+:root {
+  --brown: #8b4513;
+  --gold: #daa520;
+  --beige: #f5f5dc;
+  --text-dark: #2c1c0f;
+  --background: #f9f5f0;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: var(--background);
+  color: var(--text-dark);
+}
+
+header {
+  background-color: var(--brown);
+  color: white;
+  padding: 1.5rem 1rem;
+  text-align: center;
+}
+
+.subtitle {
+  font-size: 1rem;
+  color: #f3e5d0;
+}
+
+nav {
+  margin-top: 1rem;
+}
+
+nav a {
+  color: var(--gold);
+  margin: 0 1rem;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: white;
+}
